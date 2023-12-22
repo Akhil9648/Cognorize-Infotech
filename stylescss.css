@@ -1,0 +1,15 @@
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.clock {
+  font-size: 36px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Add more styles as needed */

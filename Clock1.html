@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alarm Clock</title>
+  <link rel="stylesheet" href="stylescss.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Alarm Clock</h1>
+    <div class="clock">
+      <p id="time"></p>
+      <p id="date"></p>
+    </div>
+    <button onclick="openAlarmSetting()">Set Alarm</button>
+    <div id="alarmSetting" class="hidden">
+      <input type="time" id="alarmTime">
+      <select id="alarmTone">
+        <option value="tone1">Tone 1</option>
+        <option value="tone2">Tone 2</option>
+        <!-- Add more tones as needed -->
+      </select>
+      <button onclick="saveAlarm()">Save Alarm</button>
+      <button onclick="closeAlarmSetting()">Cancel</button>
+    </div>
+    <div id="alarmsList" class="hidden">
+      <h2>Alarms</h2>
+      <ul id="alarmList"></ul>
+    </div>
+  </div>
+
+  <audio id="alarmSound" src="alarm_sound.mp3" loop></audio>
+
+  <script src="scriptjs.js"></script>
+</body>
+</html>
